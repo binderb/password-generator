@@ -64,14 +64,14 @@ function promptForCriterion(criterion) {
   while (true) {
     switch (criterion) {
       case "minLength":
-        user_value = prompt("Please enter a minimum character length:");
+        user_value = prompt("Please enter a minimum character length (8-128):");
         // Need to check this one to see if there is a valid integer of proper size in the user's input.
         if (user_value !== "" && parseInt(user_value) && parseInt(user_value) >= 8 && parseInt(user_value) <= 128) return user_value;
         else if (parseInt(user_value) && (parseInt(user_value) < 8 || parseInt(user_value) > 128)) alert("Please enter a value between 8 and 128.");
         else alert("Please enter a valid integer value.");
         break;
       case "maxLength":
-        user_value = prompt("Please enter a maximum character length:");
+        user_value = prompt("Please enter a maximum character length (8-128):");
         // Need to check this one to see if there is a valid integer of proper size in the user's input.
         if (user_value !== "" && parseInt(user_value) && parseInt(user_value) >= 8 && parseInt(user_value) <= 128) return user_value;
         else if (parseInt(user_value) && (parseInt(user_value) < 8 || parseInt(user_value) > 128)) alert("Please enter a value between 8 and 128.");
