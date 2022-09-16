@@ -46,7 +46,6 @@ function generatePassword() {
   if (chars[1]) characterPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
   if (chars[2]) characterPool.push('0','1','2','3','4','5','6','7','8','9');
   if (chars[3]) characterPool.push(' ','!','"','#','$','%','&','\'','(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[','\\',']','^','_','`','{','|','}','~');
-  console.log(characterPool);
   var password = "";
   for (var i=0;i<passwordLength;i++) {
     // Pick a random character from the pool, and add it to the password string.
